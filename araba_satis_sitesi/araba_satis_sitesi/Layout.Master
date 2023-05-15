@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="araba_satis_sitesi.Layout" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+   
+
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">ArabaAl.com</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="arabaListele.aspx">Ana Sayfa</a></li>
+                    <li><a href="arabaEkle.aspx">Araba Ekle</a></li>
+                    <li><a href="İletisim.aspx">İletişim</a></li>
+                    <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="kaid" runat="server"><a href="KayitOl.aspx"><span class="glyphicon glyphicon-user"></span>Kayıt Ol</a></li>
+                    <li id="gidi" runat="server"><a href="girisYap.aspx"><span class="glyphicon glyphicon-log-in"></span>Giriş Yap</a></li>
+                    <li id="cidi" runat="server"><a href="cikis.aspx"><span class="glyphicon glyphicon-log-in"></span>Çıkış Yap</a></li>
+                </ul>
+            </div>
+        </nav>
+   
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+</body>
+</html>
+
